@@ -1,0 +1,23 @@
+### TRAER POSTS
+GET http://localhost:3005/api/posts
+
+### CREAR POST
+POST http://localhost:3005/api/posts
+Content-Type: application/json
+
+{
+    "title": "nuevo Posteo",
+    "description": "nueva descripcion",
+    "poster": "https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg"
+}
+
+### MODIFICAR POST
+PUT http://localhost:3005/api/posts/2
+Content-Type: application/json
+
+{
+    "title": "24"
+}
+
+### ELIMINAR
+DELETE http://localhost:3005/api/posts/3
